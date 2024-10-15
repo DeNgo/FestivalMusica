@@ -1,0 +1,27 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeNgo/FestivalMusica.git"
+  },
+  "keywords": [
+    "SAAS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "\"Ruan\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeNgo/FestivalMusica/issues"
+  },
+  "homepage": "https://github.com/DeNgo/FestivalMusica#readme",
+  "dependencies": {
+    "sass": "^1.79.5"
+  }
+}
