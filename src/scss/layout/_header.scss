@@ -1,0 +1,23 @@
+@use "../base/variables" as *;
+
+.header{
+    background-color: $colorGreen;
+    
+    .contenido-header{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1{
+        color: $colorWhite;
+        margin: 0;
+    }
+}
+
+.navegacion-principal{
+    a{
+        color: $colorWhite;
+    }
+}
