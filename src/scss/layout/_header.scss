@@ -17,7 +17,15 @@
 }
 
 .navegacion-principal{
+    display: flex;
+    gap: 2rem;
+
     a{
         color: $colorWhite;
+        font-size: 2.4rem;
+
+        &:hover{
+            color: $colorYellow;
+        }
     }
 }

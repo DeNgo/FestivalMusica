@@ -385,6 +385,14 @@ body > section {
   margin: 0;
 }
 
+.navegacion-principal {
+  display: flex;
+  gap: 2rem;
+}
 .navegacion-principal a {
   color: #FFFFFF;
+  font-size: 2.4rem;
+}
+.navegacion-principal a:hover {
+  color: #fdda00;
 }
