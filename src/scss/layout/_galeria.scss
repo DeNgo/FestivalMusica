@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.galeria{
+    @include contenedor;
+
+    &-imagenes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}

@@ -548,6 +548,17 @@ body > section {
   background-color: rgb(94.258, 191.242, 186.752);
 }
 
+.galeria {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
 .contenedor-boletos {
   background-color: #4CB8B3;
 }
