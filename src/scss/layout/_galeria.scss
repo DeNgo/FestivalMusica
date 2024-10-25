@@ -6,7 +6,73 @@
 
     &-imagenes{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
+
+        @include telefono{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+        }
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        @include desktop{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        img{
+            height: 20rem;
+            object-fit: cover;
+        }
+    }
+}
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    display: grid;
+    place-items: center;
+    
+    animation: fadeIn ease-in 0.5s;
+    &-fadeOut{
+        animation: fadeOut ease-in 0.5s;
+    }
+    img{
+        max-width: 100rem;
+    }
+}
+
+.btn-cerrar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: $colorWhite;
+    border: none;
+    color: $colorBlack;
+    font-weight: 700;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
     }
 }
