@@ -1,53 +1,68 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
 
-.header{
+.header {
     background-color: $colorGreen;
-    
-    .contenido-header{
-        padding: 2rem;
-        @include tablet{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+    @include tablet {
+        &.fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            box-shadow: .1rem .2rem .3rem #333;
+        }
+
+        .contenido-header {
+            padding: 2rem;
+
+            @include tablet {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
     }
 
-    h1{
+
+    h1 {
         color: $colorWhite;
         text-align: center;
-        @include tablet{
+
+        @include tablet {
             text-align: left;
             margin: 0;
         }
     }
 }
 
-.navegacion-principal{
+.navegacion-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    @include tablet{
+
+    @include tablet {
         flex-direction: row;
     }
 
-    a{
+    a {
         color: $colorWhite;
         font-size: 2.4rem;
 
-        &:hover{
+        &:hover,
+        &.active {
             color: $colorYellow;
         }
     }
 }
 
-@mixin contenedor{
+@mixin contenedor {
     width: 95%;
     max-width: 120rem;
     margin: 0 auto;
 }
 
-.header-contenedor{
+.header-contenedor {
     @include contenedor();
 }
